@@ -1,4 +1,425 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #222;
+}
+
+/* ongoing carousel  */
+
+.carosel-ongoing{
+    height: 370px;
+}
+
+.pic img{
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+.testimonial:hover .pic img {
+  opacity: 0.7;
+}
+
+.testimonial:hover .pic img{
+  transform: scale(1.1);
+  margin-top: 20px;
+}
+
+.testimonial{
+   width: 159px;
+}
+.testimonial button{
+  display: flex;
+  justify-content: center;
+  width: 100%;  
+  background-color:transparent;
+  border: none;
+}
+.testimonial .play-img{
+  width:80%; 
+  display: none;
+  position: relative; 
+  bottom: 220px;
+}
+
+.testimonial:hover .play-img{
+  display: block;
+}
+.testimonial h3{
+  width: 100%;
+  text-align: center;
+}
+.testimonial h3 button{
+  color: #989898;
+  font-size: 20px;
+  margin: 0px;
+  font-weight: 600;
+  text-align:center;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.testimonial .post{
+  color: #989898;
+  text-align:center;
+}
+
+.owl-item{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* gap: 10px; */
+}
+
+/* button carousel */
+.btn-carousel{
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.btn-carousel h3{
+  font-weight: 700;
+}
+
+.btn-carousel button{
+  border: none;
+  background-color: transparent;
+}
+.btn-carousel button img{
+  width: 13px;
+}
+
+/* content */
+.content::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+ 
+  .sidebar{
+    float: none;
+    width: 100%;
+   }
+  .sidebar aside {
+    background-color: #333;
+    padding: 20px;
+  }
+
+  .sidebar .carosel-ongoing {
+    padding: 20px;
+    background-color: #333;
+    border-top: 2px solid #444;
+  }
+
+    /* card main */
+    .r-anime{
+      border-bottom: 2px solid #444;
+      padding-bottom: 10px;
+    }
+  main{
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color:#333;
+    margin-top: 20px;
+   }
+
+   main h3{
+    color: #fff;
+    font-weight: 700;
+   }
+   .img-card{
+    border: 2px solid #222;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 1s;
+   }
+   /* .img-card:hover{
+    width: 90%;
+   } */
+   .hv-img{
+    transition: 0.6s;
+   }
+   .hv-img:hover{
+    transform: scale(0.8);
+    z-index: 2;
+   }
+
+   .tl-card{
+    color: #989898;
+    font-weight: 600;
+    text-align: center;
+   }
+   .card-text{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   }
+   .card-text img{
+    width: 50%;
+   }
+   .card-body{
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+   }
+
+   /* daftar anime */
+   .d-anime h2{
+    color: #fff;
+    font-weight: 700;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top:10px ;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #444;
+   }
+   .d-anime{
+    background-color: #333;
+    margin-top: 10px;
+   }
+   .d-group{
+    display: flex;
+   }
+   .d-group img{
+    width: 100%;
+    border: 2px solid #111;
+   }
+   .d-anime-lr{
+    border: 2px solid #111;
+    padding: 5px;
+    margin: 15px;
+    align-items: center;
+   }
+   .d-anime-lr .j-anime{
+    text-align: center;
+   }
+   .j-anime{
+    text-align: center;
+    width: 100%;
+   }
+   .j-anime h3{
+    font-weight: 600; 
+    color: #989898;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+   }
+
+   .ds-item{
+    color: #989898;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+   }
+   .ds-s-anime button{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #444;
+    margin-top: 10px;
+   }
+   .ds-s-anime button:hover{
+    background-color: transparent;
+  }
+
+   /* modal deskripsi */
+   .g-item{
+    border-radius: 10px;
+    padding: 5px;
+    color: #fff;
+    background-color: #444;
+    margin-top: 20px;
+    margin-left: 13px;
+   }
+
+   .star-image{
+    width: 50%;
+   }
+   .dsm-item{
+    width: 100%;
+   }
+   .genre{
+    justify-content: center;
+   }
+
+   /* footer */
+  footer {
+    margin-top: 20px;
+  }
+
+
+
+/* untuk layar devaice kecil */
+@media screen and (min-width: 0px) {
+    .sidebar aside {
+        background-color: #333;
+        padding: 10px;
+      }
+      .btn-carousel button img{
+        width: 10px;
+      }
+      main{
+        margin-top: 20px;
+       }
+       .cn-card{
+        display: flex;
+      }
+      .cn-card .card{
+        width: 50%;
+      }
+      .d-anime{
+        margin-right: 0px;
+       }
+      .ds-item{
+        display: none;
+      }
+      .genre{
+        margin-right: 10px;
+      }
+      .genre .g-item{
+       margin-left: 0px;
+       margin-right: 5px;
+      }
+      .mm-image{
+        width: 50%;
+       }
+      
+}
+
+@media screen and (min-width: 450px) {
+  .sidebar{
+      float: none;
+      width: 100%;
+     }
+     main{
+      float: none;
+      width: 100%;
+        box-sizing: border-box;
+     }
+     .d-anime{
+      margin-right: 0px;
+     }
+     .ds-item{
+      display: none;
+    }
+    .genre{
+      margin-left: 15px;
+    }
+    .genre .g-item{
+     margin-left: 0px;
+     margin-right: 7px;
+    }
+ 
+}
+ 
+/*untuk layar device berukuran sedang*/
+@media screen and (min-width: 550px) {
+    .sidebar{
+        float: none;
+        width: 100%;
+       }
+       main{
+        float: none;
+        width: 100%;
+          box-sizing: border-box;
+          margin-top: 20px;
+       }
+       .sidebar aside {
+        background-color: #333;
+        padding: 20px;
+      }
+      .btn-carousel button img{
+        width: 13px;
+      }
+      .cn-card{
+        display: flex;
+      }
+      .cn-card .card{
+        width: 50%;
+      }
+      .d-anime{
+        margin-right: 0px;
+       }
+       .ds-item{
+        display: none;
+      }
+      .d-anime-lr{
+        display: block;
+      }
+}
+@media screen and (min-width: 660px) {
+  .ds-item{
+    display: block;
+  }
+  .d-anime-lr{
+    display: flex;
+  }
+}
+ 
+/*untuk layar device berukuran besar*/
+@media screen and (min-width: 800px) {
+    .sidebar {
+        float: left;
+        width: 70%;
+      }
+   main {
+    width: 30%;
+    box-sizing: border-box;
+    float: right;
+    margin-top: 0px;
+  }
+  .sidebar aside {
+    background-color: #333;
+    padding: 20px;
+    margin-right: 15px;
+  }
+
+  .carosel-ongoing{
+    margin-right:15px;
+  }
+  .btn-carousel button img{
+    width: 13px;
+  }
+  .cn-card{
+    display: block;
+  }
+  .cn-card .card{
+    width: 100%;
+  }
+  .d-anime{
+    margin-right: 15px;
+   }
+   .ds-item{
+    display: block;
+    font-size: 17px;
+  }
+  .j-anime h3{
+    font-size: 17px;
+  }
+  .lo-modal{
+    display: flex;
+  }
+  .dsm-item{
+    width: 50%;
+   }
+   .mm-image{
+    width: 100%;
+    background-color: blue;
+   }
+ 
+}
+
+@media screen and (min-width: 1000px) {
+  .ds-item{
+    display: block;
+    font-size: 20px;
+  }
+  .j-anime h3{
+    font-size: 20px;
+  }
 }
