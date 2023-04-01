@@ -2,18 +2,15 @@
 const movies = [
   {
     title: "Movie Title 1",
-    description: "Movie Description 1",
-    poster: "https://via.placeholder.com/150x200",
+    poster: "daftar/norogami.jpg",
   },
   {
     title: "Movie Title 2",
-    description: "Movie Description 2",
-    poster: "https://via.placeholder.com/150x200",
+    poster: "daftar/overlord.jpg",
   },
   {
     title: "Movie Title 3",
-    description: "Movie Description 3",
-    poster: "https://via.placeholder.com/150x200",
+    poster: "daftar/𝚋𝚕𝚎𝚊𝚌𝚑.jpg",
   },
 ];
 

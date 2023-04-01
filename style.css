@@ -258,6 +258,9 @@ body{
     margin: 0 auto;
     text-align: center;
   }
+  .container-gallery h1 {
+    color: #fff;
+  }
   
   .movies {
     display: flex;
@@ -280,6 +283,7 @@ body{
     font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 5px;
+    color: aliceblue;
   }
   
   .movie p {
